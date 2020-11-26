@@ -52,11 +52,51 @@ $(document).ready(function () {
 
     // Empty array to record a song as the user clicks notes
     var recordedNotes = [];
+    var recordingOne = ["F,3","A,3","B,3",
+        "F,3","A,3","B,3",
+        "F,3","A,3","B,3","E,4",
+        "D,4","B,3","C,4",
+        "B,3","G,3","E,3",
+        "D,3","E,3","G,3","E,3",
+        "F,3","A,3","B,3",
+        "F,3","A,3","B,3",
+        "F,3","A,3","B,3","E,4",
+        "D,4","B,3","C,4",
+        "E,4","B,3","G,3",
+        "B,3","G,3","D,3","E,3",
+        "D,3","E,3","F,3",
+        "G,3","A,3","B,3",
+        "C,4","B,3","E,3",
+        "D,3","E,3","F,3",
+        "G,3","A,3","B,3",
+        "C,4","D,4","E,4",
+        "D,3","E,3","F,3",
+        "G,3","A,3","B,3",
+        "C,4","B,3","E,3",
+        "D,3","C,3","E,3","D,3",
+        "G,3","F,3","A,3","G,3",
+        "B,3","A,3","C,4","B,3",
+        "D,4","C,4","E,4","F,4",
+        "D,4","E,4"
+    ];
+    var recordingTwo = ["E,4","D,4","C,4",
+        "E,4","D,4","C,4",
+        "C,4","C,4","C,4","C,4",
+        "D,4","D,4","D,4","D,4",
+        "E,4","D,4","C,4",];
 
     // This anonymous function makes the Play Recording
     // button play the array of recorded notes
     $("#playButton").click(function () {
         playRecording(recordedNotes);
+    });
+
+    $("#songOneButton").click(function () {
+        playRecording(recordingOne);
+    });
+
+    $("#songTwoButton").click(function () {
+        playRecording(recordingTwo);
     });
 
     // Assign functions to the other buttons
